@@ -1,7 +1,7 @@
 %Guilherme Saad Botrel
 %12121ECP018
 
-%Racha cuca difÌcil: Visita ao Aqu·rio.
+%Racha cuca dif√≠cil: Visita ao Aqu√°rio.
 %https://rachacuca.com.br/logica/problemas/visita-ao-aquario/
 
 %Mochila
@@ -27,7 +27,7 @@ resolver(Aq) :-
              mochila(A,branca),
              sobrenome(A,andrade),
              
-%Milene È do signo de Virgem.
+%Milene √© do signo de Virgem.
              menina(B,Aq),
              signo(B,virgem),
              nome(B,milene),
@@ -37,18 +37,18 @@ resolver(Aq) :-
              sobrenome(C,santos),
              animal(C,peixeboi),
 
-%A garota do signo de C‚ncer tem o sobrenome Dias.
+%A garota do signo de C√¢ncer tem o sobrenome Dias.
              menina(D,Aq),
              signo(D,cancer),
              sobrenome(D,dias),
              
-%Gisele È a dona da mochila Amarela.
+%Gisele √© a dona da mochila Amarela.
              menina(E,Aq),
              mochila(E,amarela),
              nome(E,gisele),
              
              
-%Garota da mochila Amarela(E) est· em algum lugarentre a da mochila Verde(F)
+%Garota da mochila Amarela(E) est√° em algum lugarentre a da mochila Verde(F)
 % e a Sabrina(G), nessa ordem.
 
              algum_lugar_entre(E,F,G,Aq),
@@ -57,7 +57,7 @@ resolver(Aq) :-
              nome(G,sabrina),
              mochila(F,verde),
              
-%A menina da mochila Amarela(E) est· em algum lugar entre a Regina(H) e
+%A menina da mochila Amarela(E) est√° em algum lugar entre a Regina(H) e
 % a garota de sobrenome Andrade(A), nessa ordem.
 
              algum_lugar_entre(E,H,A,Aq),
@@ -65,7 +65,7 @@ resolver(Aq) :-
              menina(H,Aq),
              nome(H,regina),
 
-%A garota da mochila Amarela(E) est· em algum lugar entre a do signo
+%A garota da mochila Amarela(E) est√° em algum lugar entre a do signo
 % de Peixes(I) e a Cristina(J), nessa ordem.
              menina(I,Aq),
              menina(J,Aq),
@@ -73,7 +73,7 @@ resolver(Aq) :-
              nome(J,cristina),
              algum_lugar_entre(E,I,J,Aq),
              
-%A garota que quer ver o Tubar„o(K) est· em algum lugar entre a que gosta
+%A garota que quer ver o Tubar√£o(K) est√° em algum lugar entre a que gosta
 % de suco de Uva(L) e a quer ver a Arraia(M), nessa ordem.
              menina(K,Aq),
              menina(L,Aq),
@@ -83,66 +83,66 @@ resolver(Aq) :-
              animal(M,arraia),
              algum_lugar_entre(K,L,M,Aq),
              
-%A menina de C‚ncer(D) est· exatamente ‡ direita da que quer ver o Peixe-boi(C).
+%A menina de C√¢ncer(D) est√° exatamente √† direita da que quer ver o Peixe-boi(C).
              exatamente_direita(D,C,Aq),
 
-%Milene(B) e Sabrina(G) est„o lado a lado.
+%Milene(B) e Sabrina(G) est√£o lado a lado.
              lado_lado(B,G,Aq),
              
-%A garota que quer ver a Piranha est· em uma das pontas.
+%A garota que quer ver a Piranha est√° em uma das pontas.
              menina(N,Aq),
              pontas(N,Aq),
              
-%A garota do signo de ¡ries(O) est· ao lado da que quer ver o Peixe-boi(C).
+%A garota do signo de √Åries(O) est√° ao lado da que quer ver o Peixe-boi(C).
              menina(O,Aq),
              ao_lado(O,C,Aq),
              
 %Sabrina(G) esta em uma das pontas.
              pontas(G,Aq),
 
-%Na terceira posiÁ„o(P) est· a menina que gosta de suco de MaÁ„(Q).
+%Na terceira posi√ß√£o(P) est√° a menina que gosta de suco de Ma√ß√£(Q).
              menina(P,Aq),
              menina(Q,Aq),
              terceira_posicao(P,Aq),
              suco(Q,maca),
              
-%A garota que quer ver o Tubar„o(K) est· exatamente ‡ direita da garota
+%A garota que quer ver o Tubar√£o(K) est√° exatamente √† direita da garota
 % da mochila Amarela(E).
              exatamente_direita(K,E,Aq),
             
-%A menina de sobrenome Lima(R) est· ao lado da garota q gosta de suco de Uva(L).
+%A menina de sobrenome Lima(R) est√° ao lado da garota q gosta de suco de Uva(L).
              menina(R,Aq),
              nome(R,lima),
              ao_lado(R,L,Aq),
              
-%Na segunda posiÁ„o est· a menina que nasceu em outubro(S).
+%Na segunda posi√ß√£o est√° a menina que nasceu em outubro(S).
              menina(S,Aq),
              mes(S,outubro),
              segunda_posicao(S,Aq),
 
-%Em uma das pontas est· a menina do signo de Peixes(I).
+%Em uma das pontas est√° a menina do signo de Peixes(I).
              pontas(I,Aq),
              
-%A menina da mochila Azul(T) est· em algum lugar ‡ esquerda da que gosta
-% de suco de Maracuj·(U).
+%A menina da mochila Azul(T) est√° em algum lugar √† esquerda da que gosta
+% de suco de Maracuj√°(U).
              menina(T,Aq),
              menina(U,Aq),
              suco(U,maracuja),
              mochila(U,azul),
              algum_lugar_esquerda(T,U,Aq),
              
-%A menina que gosta de suco de MaÁ„(Q) est· ao lado da que quer ver o
+%A menina que gosta de suco de Ma√ß√£(Q) est√° ao lado da que quer ver o
 % Lobo-marinho(V).
              menina(V,Aq),
              animal(V,lobomarinho),
              ao_lado(Q,V,Aq),
              
-%A menina que gosta de suco de Caju est· em uma das pontas.
+%A menina que gosta de suco de Caju est√° em uma das pontas.
              menina(W,Aq),
              suco(W,caju),
              pontas(W,Aq),
              
-%Regina(H) est· em uma das pontas.
+%Regina(H) est√° em uma das pontas.
              pontas(H,Aq),
              
 
@@ -212,29 +212,3 @@ terceira_posicao(aquario(_,_,X,_,_),X).
 
 pontas(aquario(_,_,_,_,X),X).
 pontas(aquario(X,_,_,_,_),X).
-
-             
-
-             
-
-
-             
-
-
-             
-
-
-             
-
-
-
-
-
-
-
-
-
-           
-
-
-
